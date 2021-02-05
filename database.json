@@ -1,0 +1,26 @@
+[
+    {
+        "data": [
+            {
+                "username": "madhav",
+                "password": "password"
+            },
+            {
+                "username": "mplbb230807",
+                "password": "madhav230807"
+            },
+            {
+                "username": "madhav230807",
+                "password": "mplbb230807"
+            },
+            {
+                "username": "admin",
+                "password": "admin"
+            },
+            {
+                "username": "administrator",
+                "password": "admin@123"
+            }
+        ]
+    }
+]
