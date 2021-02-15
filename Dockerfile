@@ -5,7 +5,7 @@ RUN apt-get update -y && apt-get install python3-pip python3-dev -y
 CMD ["ufw allow 5000"]
 
 RUN pip3 install flask
-COPY ./* /app
+ADD . /app
 WORKDIR /app
 
 ENTRYPOINT ["python3"]
