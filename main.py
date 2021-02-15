@@ -1,5 +1,6 @@
 import flask
 from flask import request, jsonify
+from hashlib import sha512
 
 app = flask.Flask(__name__)
 login_page = open('login.html', 'rb').read()
@@ -17,6 +18,7 @@ def login():
 
     username = request.form['username']
     password = request.form['password']
+    password = sha512(password.encode()).hexdigest()
 
     for i in database[0]['data']:
         if i['username'] == username:
@@ -25,4 +27,4 @@ def login():
             
     return login_failed, 403
 
-app.run(host="0.0.0.0")
+app.run(host="0.0.0.0", debug=True)
