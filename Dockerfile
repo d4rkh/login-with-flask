@@ -9,4 +9,4 @@ COPY ./* /app
 WORKDIR /app
 
 ENTRYPOINT ["python3"]
-cmd ["main.py"]
+CMD ["main.py"]
