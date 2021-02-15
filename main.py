@@ -11,7 +11,7 @@ login_failed = open('login-failed.html', 'rb').read()
 def home():
     return login_page
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['POST'])
 def login():
     database = open('database.json', 'rb').read()
     database = eval(database)
